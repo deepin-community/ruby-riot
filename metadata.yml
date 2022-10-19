@@ -1,0 +1,196 @@
+--- !ruby/object:Gem::Specification
+name: riot
+version: !ruby/object:Gem::Version
+  version: 0.12.7
+  prerelease: 
+platform: ruby
+authors:
+- Justin 'Gus' Knowlden
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2013-10-18 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: rr
+  requirement: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :runtime
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    none: false
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+description: An extremely fast, expressive, and context-driven unit-testing framework.
+  A replacement for all other testing frameworks. Protest the slow test.
+email: gus@gusg.us
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- .gitignore
+- .travis.yml
+- .yardopts
+- CHANGELOG
+- Gemfile
+- MIT-LICENSE
+- README.markdown
+- Rakefile
+- lib/riot.rb
+- lib/riot/assertion.rb
+- lib/riot/assertion_macro.rb
+- lib/riot/assertion_macros/any.rb
+- lib/riot/assertion_macros/assigns.rb
+- lib/riot/assertion_macros/empty.rb
+- lib/riot/assertion_macros/equals.rb
+- lib/riot/assertion_macros/equivalent_to.rb
+- lib/riot/assertion_macros/exists.rb
+- lib/riot/assertion_macros/includes.rb
+- lib/riot/assertion_macros/kind_of.rb
+- lib/riot/assertion_macros/matches.rb
+- lib/riot/assertion_macros/nil.rb
+- lib/riot/assertion_macros/raises.rb
+- lib/riot/assertion_macros/raises_kind_of.rb
+- lib/riot/assertion_macros/respond_to.rb
+- lib/riot/assertion_macros/same_elements.rb
+- lib/riot/assertion_macros/size.rb
+- lib/riot/context.rb
+- lib/riot/context_helpers.rb
+- lib/riot/context_options.rb
+- lib/riot/message.rb
+- lib/riot/middleware.rb
+- lib/riot/reporter.rb
+- lib/riot/reporter/dot_matrix.rb
+- lib/riot/reporter/io.rb
+- lib/riot/reporter/pretty_dot_matrix.rb
+- lib/riot/reporter/silent.rb
+- lib/riot/reporter/story.rb
+- lib/riot/rr.rb
+- lib/riot/runnable.rb
+- lib/riot/situation.rb
+- lib/riot/version.rb
+- riot.gemspec
+- test/benchmark/message_concatenation.rb
+- test/benchmark/riot_vs_minitest.rb
+- test/benchmark/same_elements_vs_set.rb
+- test/benchmark/simple_context_and_assertions.rb
+- test/core/assertion_macros/any_test.rb
+- test/core/assertion_macros/assigns_test.rb
+- test/core/assertion_macros/empty_test.rb
+- test/core/assertion_macros/equals_test.rb
+- test/core/assertion_macros/equivalent_to_test.rb
+- test/core/assertion_macros/exists_test.rb
+- test/core/assertion_macros/includes_test.rb
+- test/core/assertion_macros/kind_of_test.rb
+- test/core/assertion_macros/matches_test.rb
+- test/core/assertion_macros/nil_test.rb
+- test/core/assertion_macros/raises_kind_of_test.rb
+- test/core/assertion_macros/raises_test.rb
+- test/core/assertion_macros/respond_to_test.rb
+- test/core/assertion_macros/same_elements_test.rb
+- test/core/assertion_macros/size_test.rb
+- test/core/context/asserts_topic_test.rb
+- test/core/context/asserts_with_arguments_test.rb
+- test/core/context/context_test.rb
+- test/core/context/context_with_options_test.rb
+- test/core/context/denies_with_arguments_test.rb
+- test/core/context/deny_test.rb
+- test/core/context/helper_test.rb
+- test/core/context/hookup_test.rb
+- test/core/context/nested_contexts_test.rb
+- test/core/context/premium_setup_test.rb
+- test/core/context/should_test.rb
+- test/core/context/using_describe_in_a_test.rb
+- test/core/middleware/chained_context_middleware_test.rb
+- test/core/middleware/context_middleware_test.rb
+- test/core/reports/basic_reporter_test.rb
+- test/core/reports/dot_matrix_reporter_test.rb
+- test/core/reports/story_reporter_test.rb
+- test/core/runnable/assertion_macro_test.rb
+- test/core/runnable/assertion_test.rb
+- test/core/runnable/erroring_gracefully_test.rb
+- test/core/runnable/message_test.rb
+- test/core/runnable/negative_assertion_test.rb
+- test/core/runnable/setup_test.rb
+- test/core/runnable/situation_test.rb
+- test/core/runnable/teardown_test.rb
+- test/extensions/rrriot_test.rb
+- test/teststrap.rb
+homepage: http://github.com/thumblemonks/riot
+licenses: []
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  none: false
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 1.8.25
+signing_key: 
+specification_version: 3
+summary: An extremely fast, expressive, and context-driven unit-testing framework.
+  Protest the slow test.
+test_files:
+- test/benchmark/message_concatenation.rb
+- test/benchmark/riot_vs_minitest.rb
+- test/benchmark/same_elements_vs_set.rb
+- test/benchmark/simple_context_and_assertions.rb
+- test/core/assertion_macros/any_test.rb
+- test/core/assertion_macros/assigns_test.rb
+- test/core/assertion_macros/empty_test.rb
+- test/core/assertion_macros/equals_test.rb
+- test/core/assertion_macros/equivalent_to_test.rb
+- test/core/assertion_macros/exists_test.rb
+- test/core/assertion_macros/includes_test.rb
+- test/core/assertion_macros/kind_of_test.rb
+- test/core/assertion_macros/matches_test.rb
+- test/core/assertion_macros/nil_test.rb
+- test/core/assertion_macros/raises_kind_of_test.rb
+- test/core/assertion_macros/raises_test.rb
+- test/core/assertion_macros/respond_to_test.rb
+- test/core/assertion_macros/same_elements_test.rb
+- test/core/assertion_macros/size_test.rb
+- test/core/context/asserts_topic_test.rb
+- test/core/context/asserts_with_arguments_test.rb
+- test/core/context/context_test.rb
+- test/core/context/context_with_options_test.rb
+- test/core/context/denies_with_arguments_test.rb
+- test/core/context/deny_test.rb
+- test/core/context/helper_test.rb
+- test/core/context/hookup_test.rb
+- test/core/context/nested_contexts_test.rb
+- test/core/context/premium_setup_test.rb
+- test/core/context/should_test.rb
+- test/core/context/using_describe_in_a_test.rb
+- test/core/middleware/chained_context_middleware_test.rb
+- test/core/middleware/context_middleware_test.rb
+- test/core/reports/basic_reporter_test.rb
+- test/core/reports/dot_matrix_reporter_test.rb
+- test/core/reports/story_reporter_test.rb
+- test/core/runnable/assertion_macro_test.rb
+- test/core/runnable/assertion_test.rb
+- test/core/runnable/erroring_gracefully_test.rb
+- test/core/runnable/message_test.rb
+- test/core/runnable/negative_assertion_test.rb
+- test/core/runnable/setup_test.rb
+- test/core/runnable/situation_test.rb
+- test/core/runnable/teardown_test.rb
+- test/extensions/rrriot_test.rb
+- test/teststrap.rb

@@ -1,0 +1,29 @@
+ruby-riot (0.12.7-2) unstable; urgency=medium
+
+  * Remove version in the gem2deb build-dependency
+  * Run wrap-and-sort on packaging files
+  * Point watch file to gemwatch.debian.net
+  * Use salsa.debian.org in Vcs-* fields
+  * Bump debhelper compatibility level to 11
+  * Fix temporarily test failures with ruby2.5 (Closes: #888171)
+  * Bump Standards-Version to 4.1.5 (no changes needed)
+  * Set Testsuite to autopkg-pkg-ruby
+
+ -- Cédric Boutillier <boutil@debian.org>  Wed, 01 Aug 2018 00:35:49 +0200
+
+ruby-riot (0.12.7-1) unstable; urgency=medium
+
+  * Imported Upstream version 0.12.7
+  * debian/patches:
+    - drop 01_fix_test_suite_for_ruby18.patch, not needed any more
+    - add no_bundler.patch to remove usage of bundler in tests
+      (as well as loadpath overload)
+  * Bump Standards-Version to 3.9.5 (no changes needed)
+
+ -- Cédric Boutillier <boutil@debian.org>  Fri, 20 Jun 2014 23:33:23 +0200
+
+ruby-riot (0.12.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #702552)
+
+ -- Cédric Boutillier <boutil@debian.org>  Thu, 07 Mar 2013 23:15:12 +0100

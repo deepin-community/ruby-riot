@@ -1,0 +1,16 @@
+Description: do not use bundler in tests
+ no loadpath overload and no rubygems
+Origin: vendor
+Author: Cédric Boutillier <boutil@debian.org>
+Last-Update: 2014-06-20
+
+--- a/test/teststrap.rb
++++ b/test/teststrap.rb
+@@ -1,7 +1,3 @@
+-$:.unshift(File.dirname(__FILE__) + "/../lib/")
+-require 'rubygems'
+-require 'bundler/setup'
+-
+ require 'riot'
+ Riot.verbose
+ Riot.pretty_dots if ENV["TM_MODE"]
